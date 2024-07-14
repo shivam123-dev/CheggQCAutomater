@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Chegg QC Automator",
+  "version": "1.0",
+  "description": "Automatically clicks the 'Start Review' button on Chegg QC.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "alarms",
+    "notifications"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Chegg QC Automator"
+  }
+}
