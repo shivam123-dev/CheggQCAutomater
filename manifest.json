@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 4,
   "name": "Chegg QC Automator",
   "version": "1.0",
   "description": "Automatically clicks the 'Start Review' button on Chegg QC.",
@@ -15,6 +15,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Chegg QC Automator"
+    "default_title": "Chegg QC Automator",
+    "default_icon": "main_icon.png"
   }
 }
