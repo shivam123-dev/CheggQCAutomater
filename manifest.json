@@ -1,7 +1,7 @@
 {
   "manifest_version": 4,
   "name": "Chegg QC Automator",
-  "version": "1.0",
+  "version": "1.4",
   "description": "Automatically clicks the 'Start Review' button on Chegg QC.",
   "background": {
     "service_worker": "background.js"

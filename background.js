@@ -17,8 +17,12 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 function clickStartReview() {
     const startButton_new = document.querySelector('button[data-test="app-card-qna-qc-primary-cta"]');
     const startButton_old = document.querySelector('button[data-test="start-qna-qc-button"]');
+    const startReview = document.querySelector('button[data-test="start-review"]');
     if (startButton_old) {
         startButton_old.click();
+        if(startReview) {
+            startReview.click();
+        }
     } else if(startButton_new) {
         startButton_new.click();
     }
@@ -55,3 +59,15 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         });
     }
 });
+
+/*
+    // Script for submit button
+    const submitButton = document.querySelectror('button[data-test="submit-btn"]');
+    if(all parameters are green) {
+        submitButton.click();
+    }
+
+    // Script for AI solution
+    const structureParameter = document.querySelectror('button[data-test="qc-mni-review-accordion-button-3"]');
+
+8*/
