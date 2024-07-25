@@ -18,6 +18,7 @@ function clickStartReview() {
     const startButton_new = document.querySelector('button[data-test="app-card-qna-qc-primary-cta"]');
     const startButton_old = document.querySelector('button[data-test="start-qna-qc-button"]');
     const startReview = document.querySelector('button[data-test="start-review"]');
+    const startTrainingButton = document.querySelector('div[id="walkme-visual-design-e6c3f43f6902cda56471b1d7ac5c4b42"]');
     if (startButton_old) {
         startButton_old.click();
         if(startReview) {
@@ -27,7 +28,6 @@ function clickStartReview() {
         startButton_new.click();
     }
     else {
-        const startTrainingButton = document.querySelector('button[data-test="start-training-button"]');
         if (startTrainingButton) {
             location.reload();
         } else {
@@ -59,15 +59,3 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         });
     }
 });
-
-/*
-    // Script for submit button
-    const submitButton = document.querySelectror('button[data-test="submit-btn"]');
-    if(all parameters are green) {
-        submitButton.click();
-    }
-
-    // Script for AI solution
-    const structureParameter = document.querySelectror('button[data-test="qc-mni-review-accordion-button-3"]');
-
-8*/
